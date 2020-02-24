@@ -3,7 +3,9 @@
   <entry>
     <title>PHPstudy漏洞</title>
     <url>/2020/02/24/PHPstudy%E6%BC%8F%E6%B4%9E/</url>
-    <content><![CDATA[<p>#通过内网phpstudy启用Sqli-lab&amp;DWVA木马植入<br><em>复现漏洞环境：内网环境下 靶机winXP（PHPStudy环境，本地Sqli-lab平台、DVWA平台）攻击机Win10</em><br>Win7虚拟机坏了，无奈拿了WinXP复现一下，没有影响，算是逻辑上的漏洞，任何系统都一样。先概括一下攻击思路吧：<br>因为是内网，所以攻击方是可以访问到靶机开启的PHPStudy网页的，包括本地的Sqli-lab平台以及DVWA平台。我们知道DVWA中有上传漏洞，攻击方访问到靶机DVWA，可以利用上传漏洞上传一句话木马到靶机电脑，通过菜刀就可以拿到电脑文件目录。那么这里有一个问题那就是DVWA平台是有登陆界面的，我们需要用户名密码才能进行DVWA的上传木马，（当然，这里若是高估了靶机使用者，就可以直接用初始DVWA用户名密码登陆），那么Sqli-lab就派上用场了，通过注入拿到DVWA的数据库信息，获取DVWA用户名密码。</p>
+    <content><![CDATA[<h1 id="通过内网phpstudy启用Sqli-lab-amp-DWVA木马植入"><a href="#通过内网phpstudy启用Sqli-lab-amp-DWVA木马植入" class="headerlink" title="通过内网phpstudy启用Sqli-lab&amp;DWVA木马植入"></a>通过内网phpstudy启用Sqli-lab&amp;DWVA木马植入</h1><p><em>复现漏洞环境：内网环境下 靶机winXP（PHPStudy环境，本地Sqli-lab平台、DVWA平台）攻击机Win10</em></p>
+<h2 id="攻击原理"><a href="#攻击原理" class="headerlink" title="攻击原理"></a>攻击原理</h2><p>Win7虚拟机坏了，无奈拿了WinXP复现一下，没有影响，算是逻辑上的漏洞，任何系统都一样。先概括一下攻击思路吧：<br><strong>因为是内网，所以攻击方是可以访问到靶机开启的PHPStudy网页的，包括本地的Sqli-lab平台以及DVWA平台。我们知道DVWA中有上传漏洞，攻击方访问到靶机DVWA，可以利用上传漏洞上传一句话木马到靶机电脑，通过菜刀就可以拿到电脑文件目录。那么这里有一个问题那就是DVWA平台是有登陆界面的，我们需要用户名密码才能进行DVWA的上传木马，（当然，这里若是高估了靶机使用者，就可以直接用初始DVWA用户名密码登陆），那么Sqli-lab就派上用场了，通过注入拿到DVWA的数据库信息，获取DVWA用户名密码。</strong>  </p>
+<h2 id="攻击步骤"><a href="#攻击步骤" class="headerlink" title="攻击步骤"></a>攻击步骤</h2><p>arp -a先发现主机ip<br><img src="G:\Git\Git\blog\images\1.png" ></p>
 ]]></content>
       <tags>
         <tag>vulnerability</tag>
