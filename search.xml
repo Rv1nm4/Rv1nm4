@@ -2,45 +2,11 @@
 <search>
   <entry>
     <title>blog_test6</title>
-    <url>/2020/01/22/blog-test6/</url>
+    <url>/2020/01/22/blog-test/</url>
     <content><![CDATA[<p>这几天刚刚白剽Github源码及师傅们的笔记搭起来这个Hexo博客先写几个测试一下（打扰辽~）</p>
 ]]></content>
       <tags>
         <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>blog_test5</title>
-    <url>/2020/01/22/blog-test5/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>渗透</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>blog_test3</title>
-    <url>/2020/01/22/blog-test3/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>CTF</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>blog_test2</title>
-    <url>/2020/01/20/blog-test2/</url>
-    <content><![CDATA[<p>#测试<br>网络空间安全学院-网络空间安全专业</p>
-]]></content>
-      <tags>
-        <tag>攻防</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>blog_test</title>
-    <url>/2020/01/20/blog-test/</url>
-    <content><![CDATA[<p>#测试<br>Rv1nm4</p>
-]]></content>
-      <tags>
-        <tag>开发</tag>
       </tags>
   </entry>
 </search>
